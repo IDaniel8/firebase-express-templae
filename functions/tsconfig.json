@@ -8,7 +8,15 @@
     "strict": true,
     "target": "es2017",
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@models/*": ["./src/models/*"],
+      "@router/*": ["./src/router/*"],
+      "@db/*": ["./src/db/*"],
+    },
   },
   "compileOnSave": true,
   "typeRoots": ["node_modules/@types"],
